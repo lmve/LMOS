@@ -24,8 +24,8 @@
 - 类似 vim 的万能编辑功能等
 
 ## 系统演示
-<iframe height=498 width=510 src="https://github.com/lmve/LMOS/blob/main/show.mp4">
-![截屏](https://github.com/lmve/LMOS/blob/main/example.png)
+<iframe height=498 width=510 src="show.mp4">
+![截屏](https://github.com/lmve/LMOS/blob/main/example.png?raw=true)
 
 
 ## How to build
