@@ -1,0 +1,89 @@
+12.26
+    为 os 编写了 Makefile
+    搭建 c-debug 环境
+    实现  ASSERT() 帮助 DEBUG, 在 interrupt.c 中实现了开关中断的操作，在 debug.c 中实现了 panic_spin() 此函数为 ASSERT() 背后实际执行的函数， 在 debug.h 中实现了 ASSERT() 的相关宏定义， 可变参数 由 __VA_ARGS__支持
+     实现一系列内存与字符串的操作函数  
+     实现内存管理
+  
+12.27
+  进程、线程的管理 Create thread directory
+  
+  
+  
+12.29
+创建新的磁盘 hd80M.img
+1.New lib/kernel/stdio-kernel.c && .h 增加了向buffer格式化输出的系统调用及用户态程序
+2.Add lib/user/stdio.c && .h    增加 sprintf
+3.Fix kernel/interrupt.c        开中断
+4.New device/ide.c && .h
+5.Fix thread/thread.c  && .h         增加idle线程    thread_yield  && thread_yield 函数声明
+6.Fix kernel/global.h
+7.Fix device/timer.c   && .h
+8.Fix kernel/init.c
+9.Fix kernel/main.c
+
+
+文件系统
+1.New fs/super_block.h
+2.New fs/inode.h
+3.New fs/dir.h
+4.New fs/fs.h
+5.New fs/fs.c
+6.Fix device/ide.h
+7.Fix thread/thread.h
+8.Fix thread/thread.c
+9.New fs/dir.c
+10.New fs/file.c
+11.New fs/file.h
+12.Fix userprog/syscall-init.c
+13.New fs/syscall.c
+14.Fix lib/user/syscall.h
+15.Fix lib/user/stdio.c
+16.Fix kernel/main.c
+
+
+12.30
+系统交互
+-------------first------------------------fork---------------------------------------
+1.Fix thread/thread.c
+2.Fix thread/thread.h
+3.Fix kernel/memory.c  && .h
+4.New thread/fork.c    && .h
+5.Fix lib/user/syscall.c  && .h
+6.Fix userprog/syscall-init.c
+7.Fix thread/thread.c/thread_init
+8.fix thread/thread.c/thread_create
+9.fix kernel/main.c
+
+-----------------------------------------获取键盘输入-----------------------------------------
+1.Fix fs/fs.c/sys_read
+2.Fix fs/fs.h
+3.Fix lib/kernel/print.s
+4.Fix lib/kernel/print.h
+5.Fix lib/user/syscall.c  && .h
+6.New shell/shell.c  && .h
+7.Fix main.c
+8.Fix device/keyboard.c/intr_keyboard_handler
+
+-----------------------------------------添加快捷键、解析键入字符--------------------------------------------
+1.Fix shell/shell.c
+
+-----------------------------------------；命令行调用对应的函数----------------------------------------------
+1.Fix thread/thread.c  && .h
+2.Fix lib/user/syscall.h
+3.Fix lib/user/syscall.c
+4.Fix userprog/syscall-init.c
+5.Fix shell/buildin_cmd.h && c
+6.Fix fs/fs.c
+7.Fix shell/shell.c
+
+-----------------------------------------实现内键命令------------------------------------------------------
+1.Fix shell/buildin_cmd.c  && .h
+2.Fix shell/shell.c        && .h
+
+
+
+
+
+
+
