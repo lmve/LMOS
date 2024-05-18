@@ -24,7 +24,7 @@
 - 类似 vim 的万能编辑功能等
 
 ## 系统演示
-![](https://github.com/lmve/LMOS/blob/main/example.png?raw=true)
+![](./example.png)
 
 
 ## How to build
